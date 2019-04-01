@@ -37,6 +37,8 @@ module.exports = {
           '/guide/',
           '/guide/naming'
         ],
+        editLinkText: '在 GitHub 上编辑此页',
+        lastUpdated: '上次更新',
       },
       '/en/': {
         label: 'English',
@@ -56,6 +58,8 @@ module.exports = {
           ['/en/', 'Introduction'],
           '/en/guide/'
         ],
+        editLinkText: 'Edit this page on GitHub',
+        lastUpdated: 'Last Updated',
       }
     }
   },
