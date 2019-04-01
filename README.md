@@ -1,10 +1,7 @@
-<p align="center"><a href="https://w-fe.github.io/website/" target="_blank"><img src="/docs/.vuepress/public/imgs/wode.png" width="64px" height="64px"/></a></p>
-
 <h3 align="center">代码规范</h3>
 
 <p align="center">
 <a href="https://circleci.com/gh/W-FE/code-guide" target="_blank"><img src="https://circleci.com/gh/W-FE/code-guide.svg?style=svg" alt="CircleCI"/></a>
-<a href="http://hits.dwyl.io/w-fe/code-guide" target="_blank"><img src="http://hits.dwyl.io/w-fe/code-guide.svg" alt="Hit Count"/></a>
 <a href="https://www.npmjs.com/package/vuepress" target="_blank"><img src="https://img.shields.io/node/v/vuepress.svg" alt="Node Status"/></a>
 </p>
 
