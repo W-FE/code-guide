@@ -36,7 +36,9 @@ module.exports = {
         sidebar: [
           ['/', '介绍'],
           '/guide/',
-          '/guide/naming'
+          '/guide/naming',
+          '/guide/html',
+          '/guide/css',
         ],
         lastUpdated: '上次更新',
       },
