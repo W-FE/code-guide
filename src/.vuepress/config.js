@@ -59,7 +59,7 @@ module.exports = {
       }
     }
   },
-  desc: "/dist/",
+  dest: "./docs/",
   plugins: [
     ["@vuepress/back-to-top"],
     ['@vuepress/last-updated']
