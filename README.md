@@ -29,6 +29,6 @@ npm run build
 
 [![flitrue](https://avatars2.githubusercontent.com/u/15258895?s=60&v=32)](https://github.com/flitrue)
 
-# 致谢
+## 致谢
 
 该代码规范参考[腾讯前端团队AlloyTeam](http://alloyteam.github.io/CodeGuide/)。
