@@ -225,3 +225,170 @@ $colorBlack: #000;
     ...
 }
 ```
+
+## 颜色
+
+- 颜色16进制用小写字母，并且尽量用简写
+
+``` css
+/* not good */
+.element {
+    color: #ABCDEF;
+    background-color: #001122;
+}
+
+/* good */
+.element {
+    color: #abcdef;
+    background-color: #012;
+}
+```
+
+## 属性简写
+
+属性简写需要你非常清楚属性值的正确顺序，而且在大多数情况下并不需要设置属性简写中包含的所有值，所以建议尽量分开声明会更加清晰。
+
+
+需要属性简写的有：
+
+- margin
+- padding
+- border
+
+不需要属性简写的有：
+
+- font
+- background
+- transition
+- animation
+
+``` css
+/* not good */
+.element {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    transition: opacity 1s linear 2s;
+}
+
+/* good */
+.element {
+    border: 1px solid #000;
+    transition-delay: 2s;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+    transition-property: opacity;
+}
+```
+
+## 媒体查询
+
+尽量将媒体查询的规则靠近与他们相关的规则，不要将他们一起放到一个独立的样式文件中，或者丢在文档的最底部，这样做只会让大家以后更容易忘记他们。
+
+``` css
+.element {
+    ...
+}
+
+.element-avatar{
+    ...
+}
+
+@media (min-width: 480px) {
+    .element {
+        ...
+    }
+
+    .element-avatar {
+        ...
+    }
+}
+```
+
+## LESS/SCSS相关
+
+- `@import` 引入的文件不需要结尾的`.less`或`.scss`
+- 嵌套最多不能超过5层
+
+## 杂项
+
+- 不允许有空的规则
+- 元素选择器用小写字母
+- 去掉小数点前面的`0`
+- 去掉数字中不必要的小数点和末尾的`0`
+- 属性值`0`后面不要加单位
+- 同个属性不同前缀的写法需要在垂直方向保持对齐，具体参照右边的写法
+- 无前缀的标准属性应该写在有前缀的属性后面
+- 不要在同个规则里出现重复的属性，如果重复的属性是连续的则没关系
+- 不要在一个文件里出现两个相同的规则
+- 用 `border: 0;` 代替 `border: none;`;
+- 选择器不要超过4层
+- 尽量少用`*`选择器
+
+``` css
+/* not good */
+.element {
+}
+
+/* not good */
+LI {
+    ...
+}
+
+/* good */
+li {
+    ...
+}
+
+/* not good */
+.element {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* good */
+.element {
+    color: rgba(0, 0, 0, .5);
+}
+
+/* not good */
+.element {
+    width: 50.0px;
+}
+
+/* good */
+.element {
+    width: 50px;
+}
+
+/* not good */
+.element {
+    width: 0px;
+}
+
+/* good */
+.element {
+    width: 0;
+}
+
+/* not good */
+.element {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+    background: linear-gradient(to bottom, #fff 0, #eee 100%);
+    background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+    background: -moz-linear-gradient(top, #fff 0, #eee 100%);
+}
+
+/* good */
+.element {
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+
+    background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+    background:    -moz-linear-gradient(top, #fff 0, #eee 100%);
+    background:         linear-gradient(to bottom, #fff 0, #eee 100%);
+}
+```

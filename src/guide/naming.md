@@ -13,7 +13,7 @@
 html文件命名多采用小写方式，多个词之间以下划线分隔。 例如 `error_report.html`。
 
 ## css及css预处理器文件命名
-css预处理器文件包括LESS，SASS/SCSS，Stylus。
+css预处理器文件包括LESS，SCSS，Stylus。
 
 css及css预处理器文件命名多采用小写方式，多个词之间以中划线分隔。 例如 `time-picker.css`。
 

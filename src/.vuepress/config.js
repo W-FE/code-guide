@@ -39,6 +39,7 @@ module.exports = {
           '/guide/naming',
           '/guide/html',
           '/guide/css',
+          '/guide/javascript',
         ],
         lastUpdated: '上次更新',
       },
