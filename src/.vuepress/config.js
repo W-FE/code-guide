@@ -40,6 +40,7 @@ module.exports = {
           '/guide/html',
           '/guide/css',
           '/guide/javascript',
+          '/guide/vue',
         ],
         lastUpdated: '上次更新',
       },
