@@ -1,4 +1,4 @@
-# JavaScript
+﻿# JavaScript
 
 ## 缩进
 
@@ -72,10 +72,10 @@ if (x < 10) {
 以下几种情况需要空格：
 
 - 二元运算符前后
-- 三元运算符'?:'前后
-- 代码块'{'前
-- 下列关键字前：else, while, catch, finally
-- 下列关键字后：if, else, for, while, do, switch,case, try, catch, finally, with, return, typeof
+- 三元运算符 `?` 和 `:` 前后
+- 代码块 `{` 前
+- 下列关键字前：`else`, `while`, `catch`, `finally`
+- 下列关键字后：`if`, `else`, `for`, `while`, `do`, `switch`, `case`, `try`, `catch`, `finally`, `with`, `return`, `typeof`
 - 单行注释'//'后（若单行注释和代码同行，则'//'前也需要），多行注释'*'后
 - 对象的属性值前
 - for循环，分号后留有一个空格，前置条件如果有多个，逗号后留一个空格
@@ -176,11 +176,11 @@ for (var i = 0; i < 2; i++) {
 以下几种情况不需要换行：
 
 - 下列关键字后：else, catch, finally
-- 代码块'{'前
+- 代码块 `{` 前
 
 以下情况需要换行：
 
-- 代码块'{'后和'}'前
+- 代码块 `{` 后和 `}` 前
 
 ``` js
 // not good
