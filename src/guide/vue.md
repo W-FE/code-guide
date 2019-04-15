@@ -15,3 +15,7 @@
     {{item.name}}
 </div>
 ```
+
+## 更多
+
+更多vue规范请参考[风格指南](https://cn.vuejs.org/v2/style-guide/)
