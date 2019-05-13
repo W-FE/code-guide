@@ -17,6 +17,7 @@ module.exports = {
   ],
   themeConfig: {
     repo: 'W-FE/code-guide',
+    docsDir: 'src',
     editLinks: true,
     locales: {
       '/': {
